@@ -95,8 +95,11 @@ class RSSAdjust extends CMSPlugin implements SubscriberInterface
             $mi = $menu->getItem($mi->parent_id);
         }
 
-        $title .= ' | ' . $mi->title . ' | NPEU';
+        if ( $title != $mi->title) {
+            $title .= ' | ' . $mi->title;
+        }
 
+        $title .= ' | NPEU';
         #echo '<pre>'; var_dump($title); echo '</pre>'; exit;
 
         $media_namesspace = 'http://search.yahoo.com/mrss/';
