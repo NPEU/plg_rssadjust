@@ -98,7 +98,6 @@ class RSSAdjust extends CMSPlugin implements SubscriberInterface
         }
 
         $title .= ' | NPEU';
-        #echo '<pre>'; var_dump($title); echo '</pre>'; exit;
 
         $media_namesspace = 'http://search.yahoo.com/mrss/';
 
