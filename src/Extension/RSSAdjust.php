@@ -73,8 +73,6 @@ class RSSAdjust extends CMSPlugin implements SubscriberInterface
      */
     public function onAfterRender($options)
     {
-        #return true;
-
         $app = Factory::getApplication();
         if ($app->isClient('administrator')) {
             return; // Don't run in admin
